@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color:  #fbfbfb;
+    padding-top: 110px;
+    font-size: 18px;
+   background-color: rgb(246,248,242);
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.3);
+    z-index: 10;
+    background-color:rgb(51, 51, 51); 
+}
+
+
+.contenedor-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+
+.footer{
+    min-height: 90px;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fbfbfb;
+    padding: 15px;
+}
+
+/* sectio*/
+
+#inicio{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    scroll-margin-top:110px ;
+    /*background-image:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(/img/fondo.jpg);*/
+}
+
+#contacto{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    scroll-margin-top:55px 
+}
+
+#mensaje{
+    scroll-margin-top:110px 
+}
+
+/* contenido de section*/
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    /*background-color :rgba(203, 203, 207);*/
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.3);
+   
+}
+
+
+
+.contenedor-iconos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+
+.contenedor-mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.contenedor-formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+
+}
+
+form {
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+
+/* botones*/
+
+.btn-formulario{
+    background-color: rgb(0,74 ,173);
+    color: #fbfbfb;
+    width: 50%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-formulario:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgb(0,74 ,173);
+}
+
+.btn-descarga{
+    background-color: rgb(0,74 ,173) ;
+    color: #fbfbfb;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    
+    
+}
+
+.btn-descarga:hover{
+    transform: scale(1.1);
+   
+}
+
+
+/* formulario*/
+
+label {
+    padding: 10px;
+    width: 50%;
+}
+
+input {
+    padding: 10px;
+    border-radius: 15px;
+    border-color: rgb(0,74 ,173);
+    border-width: 2px;
+
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 15px;
+    border-color: rgb(0,74 ,173);
+    border-width: 2px;
+}
+
+
+/* imagenes*/
+
+.img-contacto{
+    max-width: 100%;
+    width: 60px;
+    
+}
+
+.img-contacto:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgb(0,74 ,173);
+    
+}
+
+
+.logo{
+    width: 150px;
+   height: 80px;
+}
+
+.foto-leo{
+    width: 200px;
+    border-radius: 50%;
+    
+}
+
+.logo-footer{
+    width: 150px;
+}
+
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+ul li{
+  padding: 10px;
+}
+
+ul li:hover{
+    background-color:  rgb(0,74 ,173);
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgb(0,74 ,173);
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: #fbfbfb;
+    font-weight: bold;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+
+h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+/* tamaño de titulo secundario*/
+h2{
+    font-size: 28px;
+    text-align: center;
+}
+
+.text-footer{
+    font-size: 16px;
+}
+
+.copirigths{
+    font-size: 10px;
+}
+
+
+@media(min-width: 1000px){
+    body{
+     padding-top: 50px;
+    }
+     #inicio{
+         flex-direction: row;
+         align-items: center;
+     }
+     article{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+     }
+
+     .foto-leo{
+        width:400px;
+        margin-right: 60px;
+    }
+    p{
+        text-align:start;
+        
+    }
+ }
+
+ @media screen  and (max-width: 400px){
+
+    ul {
+        font-size: 16px;
+    }
+    .logo{
+        width: 80px;
+        height: 40px;
+    }
+    .foto-leo{
+        width:150px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+    
+    p{
+        font-size: 16px;        
+    }
+
+    .btn-descarga {
+        font-size: 18px;
+    }
+
+    .logo-footer{
+        width: 80px;
+        height: 40px;
+    }
+ }
+
+
+ 
