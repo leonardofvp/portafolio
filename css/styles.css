@@ -13,7 +13,8 @@ body{
     background-color:  #fbfbfb;
     padding-top: 110px;
     font-size: 18px;
-   background-color: rgb(246,248,242);
+  /* background-color: rgb(246,248,242);*/
+  background-color: #f0f1f3;
 }
 
 
@@ -36,6 +37,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav{
@@ -112,8 +114,9 @@ article{
     border-radius: 15px;
     margin-bottom: 30px;
     box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.3);
-   
+    background-color: #ffff;
 }
+
 
 
 
@@ -242,6 +245,7 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 ul li{
@@ -285,7 +289,7 @@ h2{
 }
 
 .copirigths{
-    font-size: 10px;
+    font-size: 16px;
 }
 
 
@@ -313,14 +317,22 @@ h2{
     }
  }
 
+
+ #menu{
+    display: none;
+    box-shadow: 0 0 20px rgb(0,74 ,173);
+ }
+
+.menu{
+    width: 60px;
+}
+ 
+
  @media screen  and (max-width: 400px){
 
-    ul {
-        font-size: 16px;
-    }
     .logo{
-        width: 80px;
-        height: 40px;
+        width: 100px;
+        height: 60px;
     }
     .foto-leo{
         width:150px;
@@ -346,7 +358,27 @@ h2{
         width: 80px;
         height: 40px;
     }
+
+    .copirigths{
+        font-size: 10px;
+    }
+
+    .menu{
+        width: 45px;
+    }
+    
  }
 
+ @media screen  and (max-width: 620px){
+    
+    ul li {
+        display: none;
+     }
 
+    #menu{
+        display: block;
+    }
+   
+
+ }
  
