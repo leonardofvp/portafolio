@@ -1,22 +1,27 @@
 
-let abrirMenu = document.getElementById("menu");
+let menu = document.getElementById("menu");
 let dropdown = document.querySelector(".dropdown");
 let cerrarMenu = document.querySelector(".cerrar");
+let linkMenu = document.querySelectorAll(".nav-link .link");
 
+//obtener las dimensiones de la pantalla
 y = window.innerHeight;
 x = window.innerWidth;
 
+// abrir el menu
 function openMenu() {
     dropdown.style.display = "block"
+    menu.classList.add("menuActive");
 
 }
 
+// cerrar el menu
 function closeMenu() {
     dropdown.style.display = "none";
-
+    menu.classList.remove("menuActive");
 }
 
-abrirMenu.onclick = openMenu;
+menu.onclick = openMenu;
 
 cerrarMenu.onclick = closeMenu;
 
@@ -34,4 +39,16 @@ document.addEventListener("click", function(event) {
     if (!target.closest(".dropdown") && !target.closest("#menu")) {
         closeMenu();
     }
+});
+
+// mantener lick activo
+
+linkMenu.forEach(function(link){
+
+    link.addEventListener("click" ,function(e){
+        var linkActual = document.querySelector(".active");
+        linkActual.classList.remove("active");
+        e.target.classList.add("active");
+    });
+
 });
