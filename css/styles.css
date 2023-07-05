@@ -352,6 +352,18 @@ h2{
     cursor: pointer;
  }
 
+ .skills{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+}
+
+.skills img {
+    max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    max-height: 100%; /* Establece la altura máxima de la imagen al 100% del contenedor */
+    display: block; /* Asegura que la imagen sea un elemento de bloque */
+  }
  
 
 
@@ -427,6 +439,11 @@ h2{
         width: 100%;
     }
     
+    .skills{
+        width: 100px !important;
+        height: 100px !important;
+       
+    }
  }
  
 
@@ -449,22 +466,12 @@ h2{
  .container-skills{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
  }
 
-.skills{
-    display: flex;
-    width: 150px;
-    height: 150px;
-    align-items: center;
-}
 
-.skills img {
-    max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
-    max-height: 100%; /* Establece la altura máxima de la imagen al 100% del contenedor */
-    display: block; /* Asegura que la imagen sea un elemento de bloque */
-  }
   
   
   
