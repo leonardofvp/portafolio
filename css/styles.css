@@ -489,6 +489,9 @@ h2{
  
 
  @media screen  and (max-width: 400px){
+    body{
+        padding-top: 72px;
+    }
 
     .logo{
         width: 100px;
