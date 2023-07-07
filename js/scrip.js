@@ -3,6 +3,10 @@ let menu = document.getElementById("menu");
 let dropdown = document.querySelector(".dropdown");
 let cerrarMenu = document.querySelector(".cerrar");
 let linkMenu = document.querySelectorAll(".nav-link .link");
+let contenedorMensaje = document.getElementById("contenedor-mensaje");
+let mensaje = document.getElementById("mensaje");
+let btnCerraMensaje = document.getElementById("contmensaje-cerrar");
+let btnEnviaMensaje = document.getElementsByClassName(".btn-formulario");
 
 //obtener las dimensiones de la pantalla
 y = window.innerHeight;
@@ -22,7 +26,6 @@ function closeMenu() {
 }
 
 menu.onclick = openMenu;
-
 cerrarMenu.onclick = closeMenu;
 
 // Cerrar el menú cuando se agranda la pantalla
@@ -39,9 +42,10 @@ document.addEventListener("click", function(event) {
     if (!target.closest(".dropdown") && !target.closest("#menu")) {
         closeMenu();
     }
+    
 });
 
-// mantener lick activo
+// mantener linkk activo
 
 linkMenu.forEach(function(link){
 
@@ -52,3 +56,13 @@ linkMenu.forEach(function(link){
     });
 
 });
+
+// mostra mensaje
+
+mensaje.onclick = function(){
+    contenedorMensaje.style.display = "block";
+};
+
+btnCerraMensaje.onclick = function(){
+    contenedorMensaje.style.display = "none";
+};

@@ -99,18 +99,7 @@ main {
     scroll-margin-top:30px 
 }
 
-#contacto{
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
-    scroll-margin-top:30px 
-}
+
 
 #portafolio{
    width: 100%;
@@ -123,6 +112,20 @@ main {
     align-items: center;
     padding: 50px 20px;
     scroll-margin-top:50px 
+    
+}
+
+#contacto{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    scroll-margin-top:30px 
 }
 
 
@@ -141,22 +144,54 @@ article{
     background-color: #ffff;
 }
 
+.cantainer-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.3);
+    background-color: #ffff;
+}
 
 
 
 .contenedor-iconos{
     width: 100%;
+    height: 200px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
     
+    
+    
 }
 
-.contenedor-mensaje{
+
+#contenedor-mensaje{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    display: none;
+    scroll-margin-top:80px;
+    position: relative;
+}
+
+#contmensaje-cerrar{
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: 23px;
+    top: 30px;  
+}
+
+#contmensaje-cerrar:hover{
+    transform:scale(1.2);
 }
 
 .contenedor-formulario{
@@ -169,9 +204,10 @@ article{
 
 form {
     padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
     margin-top: 20px;
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.3);
+    background-color: #ffff;
 }
 
 
@@ -310,7 +346,6 @@ h1{
 h2{
     font-size: 28px;
     text-align: center;
-    color : rgb(0,74 ,173);
     font-weight: bold;
 }
 
