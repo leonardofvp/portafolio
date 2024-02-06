@@ -421,15 +421,17 @@ h2{
 
  .skills{
     display: flex;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     align-items: center;
+    border-radius: 5px;
 }
 
 .skills img  {
     max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
     max-height: 100%; /* Establece la altura máxima de la imagen al 100% del contenedor */
     display: block; /* Asegura que la imagen sea un elemento de bloque */
+    border-radius: 5px;
   } 
 
 
