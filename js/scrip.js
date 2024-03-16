@@ -45,20 +45,9 @@ document.addEventListener("click", function(event) {
     
 });
 
-// mantener linkk activo
 
-linkMenu.forEach(function(link){
-
-    link.addEventListener("click" ,function(e){
-        var linkActual = document.querySelector(".active");
-        linkActual.classList.remove("active");
-        e.target.classList.add("active");
-    });
-
-});
 
 // mostra mensaje
-
 mensaje.onclick = function(){
     contenedorMensaje.style.display = "block";
 };

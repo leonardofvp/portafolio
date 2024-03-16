@@ -86,6 +86,18 @@ main {
     url(/img/fondo.jpg);*/
 }
 
+.wasapp-logo{
+    width: 70px;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
 #sobremi{
     max-width: 1000px;
     margin-left: auto;
@@ -232,7 +244,7 @@ form {
 }
 
 .btn-descarga{
-    background-color: rgb(0,74 ,173) ;
+    background-color: rgb(1,114 ,180) ;
     color: #fbfbfb;
     font-size: 20px;
     padding: 10px;
@@ -241,7 +253,7 @@ form {
     
 }
 
-.btn-descarga:hover{
+.btn-descarga:hover,  .linkding-logo:hover, .wasapp-logo:hover{
     transform: scale(1.1);
    
 }
@@ -312,11 +324,18 @@ ul {
 
 .nav ul .link{
     padding: 10px;   
+    
 }
 
- ul .link:hover , .dropdown li:hover , .active{
-   background-color:  rgb(0,74 ,173);
+ ul .link:hover , .dropdown li:hover {
+   background-color:  rgba(14 ,139 ,6, 0.7);
+   font-weight: bold;
    border-radius: 20px;
+   transition: background-color 0.5s ease;
+   
+   a{
+    border-bottom: none;
+   }
    
 }
 
@@ -327,7 +346,13 @@ a {
     color: #fbfbfb;
     font-weight: bold;
     padding: 10px;
+    
 }
+
+.nav ul li a{
+    border-bottom: 1px solid rgba(14 ,139 ,6);
+}
+
 
 p{
     text-align: center;
@@ -342,6 +367,11 @@ h1{
     font-size: 36px;
 }
 
+h2{
+    color: rgb(14 ,139 ,6);
+    font-weight: bold;
+}
+
 /* tamaño de titulo secundario*/
 h2{
     font-size: 28px;
@@ -352,6 +382,13 @@ h2{
 .text-footer{
     font-size: 16px;
 }
+
+span{
+    color:  rgb(14 ,139 ,6);
+    
+}
+
+
 
 .copirigths{
     font-size: 16px;
@@ -364,7 +401,7 @@ h2{
  }
  
  .menuActive , #menu:hover{
-    box-shadow: 0 0 30px rgb(0,74 ,173);
+    box-shadow: 0 0 30px rgb(14 ,139 ,6);
  }
 
 .menu{
@@ -497,7 +534,7 @@ h2{
     margin-top: 50px !important;
  }
 
-
+/* desaparecer los enlaces */
 @media(min-width: 1000px){
    
     body{
@@ -524,6 +561,21 @@ h2{
    
  }
 
+
+ @media screen  and (max-width: 1074px){
+    
+    ul li {
+        display: none;
+     }
+
+    #menu{
+        display: block;
+    }
+   
+  
+ }
+
+ 
 
  
 
@@ -582,20 +634,6 @@ h2{
  
 
 
-
- @media screen  and (max-width: 762px){
-    
-    ul li {
-        display: none;
-     }
-
-    #menu{
-        display: block;
-    }
-   
-    
-  
- }
 
 
 
