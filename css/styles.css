@@ -86,11 +86,11 @@ main {
     url(/img/fondo.jpg);*/
 }
 
-.info .wasapp-logo{
+div .info .wasapp-logo{
     width: 70px;
 }
 
-.info{
+div .info{
     width: 100%;
     display: flex;
     flex-direction: row;
